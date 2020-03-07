@@ -1,5 +1,5 @@
 <?php
- include('');
+ include("conf.php";)
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -100,10 +100,6 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
-	<!-- <script type="text/javascript">
-		var MID_PATH="https://web.njit.edu/~mtr22/CS490/beta/midend/";
-	</script>
-<div id="ajaxDiv"></div> -->
 </body>
 
 </html>
