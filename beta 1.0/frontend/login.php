@@ -4,16 +4,8 @@
 	<script src="login_front.js" type="text/JavaScript"></script>
 </head>
 <body>
-<div id="bg">
-  <img src="images/background2.jpg" alt="background">
-</div>
-
 <div id="login_div">
 	<form id="login" name="login" method="post" class="form-login">
-	
-	<div class="loginbox">
-
-	<div class="disableBlur">
 		<h1>NJIT Online Exam</h1>
 		<p>Please log in using your UCID and password.</p>
 		<div class="dialog">
@@ -42,7 +34,7 @@
 	</form>
 
 
-<script type="text/javascript">  
+<script type="text/javascript">
 	var MID_PATH="https://web.njit.edu/~mtr22/CS490/beta/midend/"; //changed midpath
 </script>
 <div id="ajaxDiv"></div>
