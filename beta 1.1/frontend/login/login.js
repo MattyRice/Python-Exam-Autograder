@@ -1,10 +1,41 @@
-//ajax to PHP
+//======================================================================================
+//Listeners for Login Fields, one for entering, two for empty inputs
+document.querySelector("#loginForm").addEventListener("submit", function(e){
+	//preventing default behaviour
+	e.preventDefault();
+	//making a call user userLogin()
+	userLogin()
+});
+
+document.querySelector("#username").addEventListener("invalid", function(){
+	//checking for length of username
+	if(String(this.value).length==0){
+		this.setCustomValidity("Username Missing");
+	}
+	else{
+		this.setCustomValidity("");
+	}
+});
+
+document.querySelector("#password").addEventListener("invalid", function(e){
+	//checking for length of password
+	if(String(this.value).length==0){
+		this.setCustomValidity("Missing password...");
+	}
+	else{
+		this.setCustomValidity("");
+	}
+});
+//======================================================================================
+//runs on attempted login
 function userLogin(){
 	var username = document.getElementById('username');
 	var password = document.getElementById('password');
 
 	makeAjaxCall(username.value, password.value);
 }
+//======================================================================================
+//ajax to PHP
 function makeAjaxCall(username, password){
 
 	var data = 'json_string={"header":"login","username":"'+username+'","password":"'+password+'"}'
