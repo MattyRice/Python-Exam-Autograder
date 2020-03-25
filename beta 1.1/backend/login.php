@@ -1,24 +1,32 @@
 <?php
-	include "db.php";
+$db_server 		= "sql1.njit.edu";
+$db_username 	= "mtr22";
+$db_password 	= "Coolgig678!";
+$db_name 		= "mtr22";
 
-	$str_json = file_get_contents('php://input');
-	$response = json_decode($str_json, true); // decoding received JSON to array
-
-	$name="none";$pass="none";
-
-	if(isset($response['name'])) $name = $response['name'];
-	if(isset($response['pass'])) $pass = $response['pass'];
-
-	$sql="select * from users where  `username` like '$name' and `password` like '$pass'";
-	$query = $db->query($sql);
-	$result=$query->fetch();
-//	if($result) echo "Student";//$result[0]['kind']; //student else instructor
-//	else echo "Reject";
-	if($result){
-		$data=array("username"=>$result['username'],"authority"=>$result['authority']);
+if (isset($_POST['username'], $_POST['password'])) {
+	try { $db = new mysqli($db_server, $db_username, $db_password, $db_name); }
+	catch (Exception $e) {
+		$message = "Service Unavailable. Error: " . $e;
+		echo json_encode($message);
+		exit;
 	}
-	else{
-		$data=array("username"=>"none","authority"=>"none");
+	$username 	= mysqli_real_escape_string($db,$_POST['username']);
+    $password 	= mysqli_real_escape_string($db,$_POST['password']);
+	$query 	 	= "SELECT `UserStatus` FROM `users` WHERE username = '$username' and password = '$password';";
+	$result 	= mysqli_query($db,$query);
+    $count 		= mysqli_num_rows($result);
+    // If result matched $username and $password, table row must be 1 row
+	// will return 'student' if user is a student and 'faculty' if user is faculty
+    if($count == 1) {
+		//session_start();
+		$reply = mysqli_fetch_row($result);
+		echo json_encode($reply);
+    }
+	else {
+		$message = "failed";
+		echo json_encode($message);
 	}
-	echo json_encode($data);
+	mysqli_close($db);
+}
 ?>

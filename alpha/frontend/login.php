@@ -25,16 +25,12 @@
 					<input class="form-control" type="button" onclick="ajaxLoginFunction();" value="Login">
 				</div></td>
 				</tr>
-			</div>
 			</tbody>
 		</table>
 		</div>
-		</div>
-	</div>
 	</form>
-
-
-<script type="text/javascript">
-	var MID_PATH="https://web.njit.edu/~mtr22/CS490/beta/midend/"; //changed midpath
+</div>
+<script type="text/javascript">  
+	var MID_PATH="https://web.njit.edu/~mtr22/CS490/alpha/midend/";
 </script>
 <div id="ajaxDiv"></div>
