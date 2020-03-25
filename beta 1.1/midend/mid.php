@@ -74,55 +74,55 @@ switch($array['header'])
 {
 	//------------------------------------------------------------------------
 	case 'login':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/login.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/login.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'questionBankRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/questionBankRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/questionBankRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'addQuestionRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/addQuestionRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/addQuestionRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'createExam':
-		'afsaccess2.njit.edu/~ja398/CS490/rc/createExam.php';
+		'afsaccess1.njit.edu/~mtr22/CS490/createExam.php';
 		break;
 	//------------------------------------------------------------------------
 	case "teacherExamListRequest":
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/teacherExamListRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/teacherExamListRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'studentExamListRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/studentExamListRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/studentExamListRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'takeExamRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/takeExamRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/takeExamRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'examStudentList':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/studentExamListRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/studentExamListRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'reviewExamRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/reviewExamRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/reviewExamRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'examUpdateRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/examUpdateRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/examUpdateRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'examReleaseRequest':
-		$url = 'afsaccess2.njit.edu/~ja398/CS490/rc/examReleaseRequest.php';
+		$url = 'afsaccess1.njit.edu/~mtr22/CS490/examReleaseRequest.php';
 		break;
     //------------------------------------------------------------------------
 	case 'teacherExamScoreRequest':
-		$url='afsaccess2.njit.edu/~ja398/CS490/rc/teacherExamScoreRequest.php';
+		$url='afsaccess1.njit.edu/~mtr22/CS490/teacherExamScoreRequest.php';
 		break;
 	//------------------------------------------------------------------------
 	case 'questionBankSortRequest':
-		$url='afsaccess2.njit.edu/~ja398/CS490/rc/searchQuestionBank.php';
+		$url='afsaccess1.njit.edu/~mtr22/CS490/searchQuestionBank.php';
 		break;
 	//=========================================================================
 
