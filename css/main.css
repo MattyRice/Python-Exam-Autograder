@@ -218,7 +218,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
+<<<<<<< HEAD
   background: #e74646;
+=======
+  background: #f2f2f2;
+>>>>>>> 158b36986f04ec47ecc4e6c45ae2fadb2eccf27c
 }
 
 .login-contain {
